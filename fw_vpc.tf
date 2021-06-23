@@ -9,7 +9,7 @@ module "vpc_mgmt" {
   regions              = var.regions
   allowed_sources      = var.mgmt_sources
   allowed_protocol     = "TCP"
-  allowed_ports        = ["443", "22"]
+  allowed_ports        = ["443"]
 }
 
 module "vpc_untrust" {
